@@ -26,7 +26,7 @@ The advisor recommends MIFB when motion is restrained, rich, or cinematic.
 The advisor appends Impeccable for every valid brief.
 The advisor appends Vercel web-design-guidelines for strict accessibility and for landing, redesign, app, and dashboard.
 The advisor also calculates DESIGN_VARIANCE, MOTION_INTENSITY, and VISUAL_DENSITY.
-The flow ends with running `gogh-brain advise` because the SKILL.md command map names that advisory command.
+The flow ends with running `gogh advise` because the SKILL.md command map names that advisory command.
 
 ## How it works
 0. Classify ambition before anything else: refresh (keep direction, tighten
@@ -51,7 +51,7 @@ The flow ends with running `gogh-brain advise` because the SKILL.md command map 
 15. Derive MOTION_INTENSITY from the motion field.
 16. Derive VISUAL_DENSITY from the density field.
 17. Review conflicts before starting implementation.
-18. Run `gogh-brain advise --vault <path> --brief <file>` after the brief is encoded.
+18. Run `gogh advise --vault <path> --brief <file>` after the brief is encoded.
 
 ## Best practice
 - Encode the project brief before selecting skills EVIDENCE-BASED
@@ -63,7 +63,7 @@ The flow ends with running `gogh-brain advise` because the SKILL.md command map 
 - Lower design variance when accessibility is strict EVIDENCE-BASED
 - Keep dashboard and app choices more restrained unless another note explicitly overrides the advisor PRACTITIONER
 - Record conflict notes before implementation begins PRACTITIONER
-- End selection with `gogh-brain advise` so the recommendation is reproducible EVIDENCE-BASED
+- End selection with `gogh advise` so the recommendation is reproducible EVIDENCE-BASED
 
 ## Pitfalls
 Choosing by GitHub stars ignores mechanism fit.
@@ -103,6 +103,6 @@ Treating the flow as market-ready without audit would violate the brain operatin
 - Keep the decision tree synced with `scripts/render_stack_advisor.py`.
 - Add tests if advisor selection rules change.
 - Re-run registry generation before changing coverage assumptions.
-- Keep the final instruction as `run gogh-brain advise`.
+- Keep the final instruction as `run gogh advise`.
 - Record project-specific overrides in stack reports.
 

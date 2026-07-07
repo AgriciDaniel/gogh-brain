@@ -15,7 +15,7 @@ def run_script(script: str, args: list[str]) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="gogh-brain", description="Operate Gogh.")
+    parser = argparse.ArgumentParser(prog="gogh", description="Operate Gogh.")
     sub = parser.add_subparsers(dest="command", required=True)
     p_new = sub.add_parser("new")
     p_new.add_argument("client")

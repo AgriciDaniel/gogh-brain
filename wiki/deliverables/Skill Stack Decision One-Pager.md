@@ -21,7 +21,7 @@ The skill order follows the same script.
 The dial defaults come from the same script and Taste Skill's dial model.
 The one-pager is a guide for selecting the stack before implementation.
 The one-pager is not a substitute for source-specific conflict notes.
-The one-pager should end with `gogh-brain advise`.
+The one-pager should end with `gogh advise`.
 The one-pager keeps all recommendations advisory under Gogh V1.
 The one-pager is printable because it uses short rows and source labels.
 The one-pager should be refreshed if advisor rules change.
@@ -46,7 +46,7 @@ The one-pager should be used with the cheat sheet for install commands.
 | Is project_type landing, redesign, app, or dashboard | Yes | Add Vercel web-design-guidelines | stack advisor |
 | Is any valid brief provided | Yes | Add Impeccable in current local advisor | stack advisor |
 
-Run line: `gogh-brain advise --vault <path> --brief <file>`.
+Run line: `gogh advise --vault <path> --brief <file>`.
 
 ## Best practice
 - Fill every advisor field before selecting the stack EVIDENCE-BASED
@@ -56,7 +56,7 @@ Run line: `gogh-brain advise --vault <path> --brief <file>`.
 - Use density to decide VISUAL_DENSITY EVIDENCE-BASED
 - Use strict accessibility to cap DESIGN_VARIANCE and add Vercel EVIDENCE-BASED
 - Keep Impeccable in the recommendation while still choosing enforcement depth PRACTITIONER
-- Run `gogh-brain advise` after the one-pager decision EVIDENCE-BASED
+- Run `gogh advise` after the one-pager decision EVIDENCE-BASED
 - Link conflict notes when a selected skill disagrees with another PRACTITIONER
 - Re-check advisor code before changing this one-pager EVIDENCE-BASED
 

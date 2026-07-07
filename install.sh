@@ -8,7 +8,7 @@ Usage: ./install.sh [--target codex|claude|agents|gemini|openclaw|portable|custo
 Installs the Gogh skill surface.
 Use --target custom --path <agent-skill-root> for Hermes or another runtime
 when its official skill root is known.
-Set GOGH_BRAIN_INSTALL_HOME to test against a temporary home directory.
+Set GOGH_INSTALL_HOME to test against a temporary home directory.
 USAGE
 }
 
@@ -30,16 +30,16 @@ if [ "${target}" = "custom" ] && [ -z "${custom_path}" ]; then
 fi
 
 source_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-base_home="${GOGH_BRAIN_INSTALL_HOME:-${HOME}}"
+base_home="${GOGH_INSTALL_HOME:-${HOME}}"
 
 target_dir() {
   case "$1" in
-    codex) echo "${base_home}/.codex/skills/gogh-brain" ;;
-    claude) echo "${base_home}/.claude/skills/gogh-brain" ;;
-    agents) echo "${base_home}/.agents/skills/gogh-brain" ;;
-    openclaw) echo "${base_home}/.openclaw/skills/gogh-brain" ;;
-    portable) echo "${base_home}/.agent-skills/gogh-brain" ;;
-    custom) echo "${custom_path%/}/gogh-brain" ;;
+    codex) echo "${base_home}/.codex/skills/gogh" ;;
+    claude) echo "${base_home}/.claude/skills/gogh" ;;
+    agents) echo "${base_home}/.agents/skills/gogh" ;;
+    openclaw) echo "${base_home}/.openclaw/skills/gogh" ;;
+    portable) echo "${base_home}/.agent-skills/gogh" ;;
+    custom) echo "${custom_path%/}/gogh" ;;
   esac
 }
 
@@ -70,11 +70,11 @@ install_one() {
 }
 
 install_gemini() {
-  local dest="${base_home}/.gemini/gogh-brain"
+  local dest="${base_home}/.gemini/gogh"
   local loader="${base_home}/.gemini/GEMINI.md"
   install_one "${dest}"
   mkdir -p "$(dirname "${loader}")"
-  python - "${loader}" "@./gogh-brain/GEMINI.md" <<'PY'
+  python - "${loader}" "@./gogh/GEMINI.md" <<'PY'
 from __future__ import annotations
 
 import re
@@ -83,8 +83,8 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 import_line = sys.argv[2]
-start = "<!-- gogh-brain-install:start -->"
-end = "<!-- gogh-brain-install:end -->"
+start = "<!-- gogh-install:start -->"
+end = "<!-- gogh-install:end -->"
 block = f"{start}\n{import_line}\n{end}"
 text = path.read_text(encoding="utf-8") if path.exists() else ""
 pattern = f"{re.escape(start)}.*?{re.escape(end)}"

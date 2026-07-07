@@ -19,9 +19,9 @@ jobs:
       - name: Install
         run: python -m pip install -e .
       - name: Compile Python
-        run: python -m compileall scripts gogh_brain tests
-      - name: "CLI smoke: gogh-brain --help"
-        run: gogh-brain --help
+        run: python -m compileall scripts gogh tests
+      - name: "CLI smoke: gogh --help"
+        run: gogh --help
       - name: Template vault lint
         run: python scripts/lint_vault.py --vault assets/template-brain --template
       - name: Pipeline tests

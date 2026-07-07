@@ -36,7 +36,7 @@ Gogh is a six-skill frontend design stack brain for AI coding agents.
 Run the package command only from a clean tree.
 
 ```bash
-python -m compileall scripts gogh_brain tests
+python -m compileall scripts gogh tests
 python tests/test_adapters.py
 python tests/test_pipeline.py
 python scripts/lint_vault.py --vault .

@@ -47,7 +47,7 @@ from Vercel web-design-guidelines.
 Six message-match variants of one landing page, each a distinct editorial
 format instead of a generic template. Full source in
 [`examples/aimh-pro-landing-variants/`](examples/aimh-pro-landing-variants/),
-live at [agricidaniel.github.io/gogh-brain](https://agricidaniel.github.io/gogh-brain/examples/aimh-pro-landing-variants/).
+live at [agricidaniel.github.io/gogh](https://agricidaniel.github.io/gogh/examples/aimh-pro-landing-variants/).
 
 <p align="center">
   <img src="assets/screenshots/aimh-serp-brutalism.webp" alt="SERP Brutalism variant: a search-results-page landing format" width="49%"/>
@@ -77,20 +77,20 @@ live at [agricidaniel.github.io/gogh-brain](https://agricidaniel.github.io/gogh-
 
 ```bash
 python -m pip install -e .
-gogh-brain demo
-gogh-brain lint --vault examples/sample-vault
-gogh-brain report --vault examples/sample-vault --html-only
+gogh demo
+gogh lint --vault examples/sample-vault
+gogh report --vault examples/sample-vault --html-only
 ```
 
 To create a client vault:
 
 ```bash
-gogh-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
-gogh-brain ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
-gogh-brain synthesize --vault ~/gogh-vaults/acme
-gogh-brain visuals --vault ~/gogh-vaults/acme
-gogh-brain report --vault ~/gogh-vaults/acme --html-only
-gogh-brain next --vault ~/gogh-vaults/acme
+gogh new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
+gogh ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
+gogh synthesize --vault ~/gogh-vaults/acme
+gogh visuals --vault ~/gogh-vaults/acme
+gogh report --vault ~/gogh-vaults/acme --html-only
+gogh next --vault ~/gogh-vaults/acme
 ```
 
 ## Boundaries

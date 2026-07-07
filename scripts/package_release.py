@@ -46,18 +46,18 @@ def main(argv: list[str] | None = None) -> int:
     if args.release_type == "market-ready":
         # A market-ready release always demands a clean tree; the dirty-tree
         # override is a dev/test convenience only.
-        os.environ.pop("GOGH_BRAIN_ALLOW_DIRTY_RELEASE", None)
+        os.environ.pop("GOGH_ALLOW_DIRTY_RELEASE", None)
         enforce_market_ready_gate()
     scan_source_tree()
     artifacts = [
-        build_zip(dist / f"gogh-brain-template-v{version}.zip", REPO / "assets" / "template-brain", "gogh-brain-template"),
-        build_zip(dist / f"gogh-brain-sample-vault-v{version}.zip", REPO / "examples" / "sample-vault", "gogh-brain-sample-vault"),
-        build_source_zip(dist / f"gogh-brain-source-v{version}.zip", version),
+        build_zip(dist / f"gogh-template-v{version}.zip", REPO / "assets" / "template-brain", "gogh-template"),
+        build_zip(dist / f"gogh-sample-vault-v{version}.zip", REPO / "examples" / "sample-vault", "gogh-sample-vault"),
+        build_source_zip(dist / f"gogh-source-v{version}.zip", version),
     ]
     for artifact in artifacts:
         validate_zip(artifact["path"])
     manifest = {
-        "product": "gogh-brain",
+        "product": "gogh",
         "version": version,
         "release_type": args.release_type,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -152,7 +152,7 @@ def source_files() -> list[Path]:
 
 
 def allow_dirty_release() -> bool:
-    return os.environ.get("GOGH_BRAIN_ALLOW_DIRTY_RELEASE") == "1"
+    return os.environ.get("GOGH_ALLOW_DIRTY_RELEASE") == "1"
 
 
 def git_worktree_files() -> list[Path]:
@@ -224,7 +224,7 @@ def build_source_zip(out: Path, version: str) -> dict[str, object]:
         for path in source_files():
             rel = path.relative_to(REPO)
             if not should_skip(rel):
-                zf.write(path, (Path(f"gogh-brain-v{version}") / rel).as_posix())
+                zf.write(path, (Path(f"gogh-v{version}") / rel).as_posix())
                 entries += 1
     return {"path": out, "entries": entries}
 

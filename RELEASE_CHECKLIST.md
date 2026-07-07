@@ -19,7 +19,7 @@
 
 ## Verification
 
-- [ ] `python -m compileall -q scripts gogh_brain tests`
+- [ ] `python -m compileall -q scripts gogh tests`
 - [ ] `python tests/test_adapters.py`
 - [ ] `python tests/test_pipeline.py`
 - [ ] `python scripts/lint_vault.py --vault assets/template-brain`

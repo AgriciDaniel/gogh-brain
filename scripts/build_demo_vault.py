@@ -18,7 +18,7 @@ def run(args: list[str]) -> None:
 
 
 def main() -> int:
-    os.environ.setdefault("GOGH_BRAIN_TODAY", "2026-07-07")
+    os.environ.setdefault("GOGH_TODAY", "2026-07-07")
     demo_parent = REPO / "examples"
     demo = demo_parent / "sample-vault"
     if demo.exists():

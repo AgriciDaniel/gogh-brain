@@ -31,10 +31,10 @@ def run_cmd(args: list[str], *, env: dict[str, str] | None = None) -> subprocess
 
 
 def main() -> int:
-    run(["-m", "compileall", "scripts", "gogh_brain", "tests"])
+    run(["-m", "compileall", "scripts", "gogh", "tests"])
     run(["tests/test_adapters.py"])
     run(["scripts/lint_vault.py", "--vault", "assets/template-brain", "--template"])
-    with tempfile.TemporaryDirectory(prefix="gogh-brain-test-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="gogh-test-") as tmp:
         out_dir = Path(tmp) / "vaults"
         run(["scripts/scaffold_vault.py", "--client", "acme", "--client-name", "Acme Co", "--owner", "Test Owner", "--out-dir", str(out_dir)])
         vault = out_dir / "acme"
@@ -47,25 +47,25 @@ def main() -> int:
     run(["scripts/build_demo_vault.py"])
     run(["scripts/audit_brain.py", "--require", "domain-adapted", "--report-only"])
     # Market-ready packaging is exercised by the release procedure with a clean tree.
-    run(["scripts/package_release.py", "--version", "0.1.0"], env={"GOGH_BRAIN_ALLOW_DIRTY_RELEASE": "1"})
+    run(["scripts/package_release.py", "--version", "0.1.0"], env={"GOGH_ALLOW_DIRTY_RELEASE": "1"})
     assert (REPO / "dist" / "RELEASE_MANIFEST.json").exists()
-    with tempfile.TemporaryDirectory(prefix="gogh-brain-install-") as tmp:
-        env = {"GOGH_BRAIN_INSTALL_HOME": tmp}
+    with tempfile.TemporaryDirectory(prefix="gogh-install-") as tmp:
+        env = {"GOGH_INSTALL_HOME": tmp}
         run_cmd(["bash", "install.sh", "--target", "all"], env=env)
-        assert (Path(tmp) / ".codex" / "skills" / "gogh-brain" / "SKILL.md").exists()
-        assert (Path(tmp) / ".openclaw" / "skills" / "gogh-brain" / "SKILL.md").exists()
-        assert (Path(tmp) / ".agent-skills" / "gogh-brain" / "SKILL.md").exists()
-        assert (Path(tmp) / ".gemini" / "gogh-brain" / "GEMINI.md").exists()
-        assert "gogh-brain-install:start" in (Path(tmp) / ".gemini" / "GEMINI.md").read_text(encoding="utf-8")
+        assert (Path(tmp) / ".codex" / "skills" / "gogh" / "SKILL.md").exists()
+        assert (Path(tmp) / ".openclaw" / "skills" / "gogh" / "SKILL.md").exists()
+        assert (Path(tmp) / ".agent-skills" / "gogh" / "SKILL.md").exists()
+        assert (Path(tmp) / ".gemini" / "gogh" / "GEMINI.md").exists()
+        assert "gogh-install:start" in (Path(tmp) / ".gemini" / "GEMINI.md").read_text(encoding="utf-8")
         custom_root = Path(tmp) / "custom-skills"
         run_cmd(["bash", "install.sh", "--target", "custom", "--path", str(custom_root)], env=env)
-        assert (custom_root / "gogh-brain" / "SKILL.md").exists()
+        assert (custom_root / "gogh" / "SKILL.md").exists()
         run_cmd(["bash", "uninstall.sh", "--target", "all"], env=env)
-        assert not (Path(tmp) / ".codex" / "skills" / "gogh-brain").exists()
-        assert not (Path(tmp) / ".gemini" / "gogh-brain").exists()
+        assert not (Path(tmp) / ".codex" / "skills" / "gogh").exists()
+        assert not (Path(tmp) / ".gemini" / "gogh").exists()
         assert not (Path(tmp) / ".gemini" / "GEMINI.md").exists()
         run_cmd(["bash", "uninstall.sh", "--target", "custom", "--path", str(custom_root)], env=env)
-        assert not (custom_root / "gogh-brain").exists()
+        assert not (custom_root / "gogh").exists()
     print("Pipeline tests passed")
     return 0
 

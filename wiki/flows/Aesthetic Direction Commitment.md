@@ -50,7 +50,7 @@ thing that produces memorable output.
 - Query the direction vocabulary: the captured style database at
   .raw/skills/ui-ux-pro-max/styles.csv (84 named styles with palettes,
   best-for and do-not-use-for columns, era, prompt keywords).
-- `gogh-brain advise` with `"ambition": "transform"` surfaces three candidate
+- `gogh advise` with `"ambition": "transform"` surfaces three candidate
   directions from that database, spread across style categories.
 - Draft two or three direction candidates, each one line: name, signature
   element, five-second memory.

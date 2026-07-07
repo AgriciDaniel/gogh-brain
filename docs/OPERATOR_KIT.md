@@ -9,9 +9,9 @@ the source trail.
 
 ```bash
 python -m pip install -e .
-gogh-brain demo
-gogh-brain lint --vault examples/sample-vault
-gogh-brain report --vault examples/sample-vault --html-only
+gogh demo
+gogh lint --vault examples/sample-vault
+gogh report --vault examples/sample-vault --html-only
 ```
 
 Open `examples/sample-vault/` in Obsidian and read:
@@ -24,10 +24,10 @@ Open `examples/sample-vault/` in Obsidian and read:
 ## Client Vault
 
 ```bash
-gogh-brain new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
-gogh-brain ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
-gogh-brain synthesize --vault ~/gogh-vaults/acme
-gogh-brain report --vault ~/gogh-vaults/acme --html-only
+gogh new acme --client-name "Acme Co" --owner "Daniel Agrici" --out-dir ~/gogh-vaults
+gogh ingest --vault ~/gogh-vaults/acme --file tests/fixtures/sample-source.md
+gogh synthesize --vault ~/gogh-vaults/acme
+gogh report --vault ~/gogh-vaults/acme --html-only
 ```
 
 ## Stack Selection

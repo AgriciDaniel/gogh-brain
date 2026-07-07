@@ -1,11 +1,11 @@
 ---
-name: gogh-brain
+name: gogh
 description: >
   Scaffold and operate Gogh, a source-cited Obsidian brain for design skill stack
   advice across six frontend design skills: taste-skill v2,
   make-interfaces-feel-better, Impeccable, Anthropic frontend-design,
   ui-ux-pro-max, and Vercel web-design-guidelines. Use when the user says
-  "gogh", "gogh-brain", "design skill stack", "anti-slop frontend",
+  "gogh", "design skill stack", "anti-slop frontend",
   "which design skill", "stack design skills", any of the six skill names, or
   wants stack recommendations, conflict resolution, unified anti-slop rules,
   audits, or a maintained vault-backed design skill brain.
@@ -28,26 +28,26 @@ Buyer, outputs, boundaries, quick start, and maturity details live in
 ## Commands
 
 ```bash
-/gogh-brain new <client-slug> --owner <name>
-/gogh-brain ingest --vault <path> --file <source>
-/gogh-brain synthesize --vault <path>
-/gogh-brain report --vault <path>
-/gogh-brain visuals --vault <path>
-/gogh-brain lint --vault <path>
-/gogh-brain next --vault <path>
-/gogh-brain registry --vault <path>
-/gogh-brain diff --vault <path> --against <capture>
-/gogh-brain advise --vault <path> --brief <file>
+/gogh new <client-slug> --owner <name>
+/gogh ingest --vault <path> --file <source>
+/gogh synthesize --vault <path>
+/gogh report --vault <path>
+/gogh visuals --vault <path>
+/gogh lint --vault <path>
+/gogh next --vault <path>
+/gogh registry --vault <path>
+/gogh diff --vault <path> --against <capture>
+/gogh advise --vault <path> --brief <file>
 ```
 
 Source checkout equivalent:
 
 ```bash
-gogh-brain new <client-slug> --owner <name>
-gogh-brain ingest --vault <path> --file <source>
-gogh-brain synthesize --vault <path>
-gogh-brain report --vault <path> --html-only
-gogh-brain advise --vault <path> --brief <file>
+gogh new <client-slug> --owner <name>
+gogh ingest --vault <path> --file <source>
+gogh synthesize --vault <path>
+gogh report --vault <path> --html-only
+gogh advise --vault <path> --brief <file>
 ```
 
 ## Required Operating Rules

@@ -11,7 +11,7 @@ related: ["[[Design Skills Cheat Sheet]]", "[[Skill Stack Decision One-Pager]]",
 source_urls: ["https://www.tasteskill.dev/guide?view=full (retrieved 2026-07-07)", "https://www.skills.sh/anthropics/skills/frontend-design (retrieved 2026-07-07)", "https://github.com/jakubkrehel/make-interfaces-feel-better (retrieved 2026-07-07)", "https://github.com/pbakaus/impeccable (retrieved 2026-07-07)", "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill (retrieved 2026-07-07)", "https://www.skills.sh/vercel-labs/agent-skills/web-design-guidelines (retrieved 2026-07-07)"]
 sources: ["[[Taste Skill Official Site]]", "[[Anthropic Frontend Design Skill and Post]]", "[[MIFB Repo and Skill File]]", "[[Impeccable Repo and Site]]", "[[UI UX Pro Max Repo]]", "[[Reception Sources]]"]
 ---
-Gogh Quickstart is the first-project operator guide: install the six skills, choose the stack, build in the recommended order, and run `gogh-brain advise`.
+Gogh Quickstart is the first-project operator guide: install the six skills, choose the stack, build in the recommended order, and run `gogh advise`.
 
 ## What it is
 This quickstart is a stack-level deliverable for Gogh operators.
@@ -22,7 +22,7 @@ The audit step comes from Audit Pipeline Flow.
 The source URLs were retrieved on 2026-07-07 unless noted in source notes.
 The guide does not mutate production systems.
 The guide does not call the brain market-ready.
-The guide assumes a project brief can be encoded for `gogh-brain advise`.
+The guide assumes a project brief can be encoded for `gogh advise`.
 The guide keeps UI UX Pro Max on its own CLI path.
 The guide keeps Vercel as a runtime audit wrapper.
 The guide keeps Impeccable hook approval caveats in the portability note.
@@ -42,7 +42,7 @@ Install commands:
 First-project walkthrough:
 
 1. Write a brief with project_type, brand_maturity, motion, density, and accessibility.
-2. Run `gogh-brain advise --vault <path> --brief <file>`.
+2. Run `gogh advise --vault <path> --brief <file>`.
 3. Use Skill Stack Decision One-Pager to confirm the selected skills.
 4. Start direction with Taste Skill dials and Anthropic subject-grounding where appropriate.
 5. Query UI UX Pro Max if brand maturity is none or partial.
@@ -70,7 +70,7 @@ Recommended stack order:
 
 ## Best practice
 - Install from the official captured command for each skill EVIDENCE-BASED
-- Use `gogh-brain advise` before starting implementation EVIDENCE-BASED
+- Use `gogh advise` before starting implementation EVIDENCE-BASED
 - Set direction before feel polish PRACTITIONER
 - Retrieve style data before implementation when brand maturity is low EVIDENCE-BASED
 - Run Impeccable init before relying on project-specific Impeccable commands EVIDENCE-BASED
@@ -117,7 +117,7 @@ Skipping audit and package gates can misstate maturity.
 ## Next actions
 - Keep all install commands refreshed before release.
 - Add provider-specific walkthroughs only after source evidence exists.
-- Run `gogh-brain advise` with a real project brief before first use.
+- Run `gogh advise` with a real project brief before first use.
 - Keep the quickstart linked to the decision one-pager and mega-checklist.
 - Re-run lint and audit after deliverable changes.
 

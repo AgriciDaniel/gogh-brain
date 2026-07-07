@@ -2,7 +2,7 @@
 
 ```json
 {
-  "brain_schema": "gogh-brain.v1",
+  "brain_schema": "gogh.v1",
   "sources": [
     {
       "path": ".raw/sources/example.csv",

@@ -17,16 +17,16 @@ if [ "${target}" = "custom" ] && [ -z "${custom_path}" ]; then
   echo "ERROR: --target custom requires --path" >&2
   exit 2
 fi
-base_home="${GOGH_BRAIN_INSTALL_HOME:-${HOME}}"
+base_home="${GOGH_INSTALL_HOME:-${HOME}}"
 
 target_dir() {
   case "$1" in
-    codex) echo "${base_home}/.codex/skills/gogh-brain" ;;
-    claude) echo "${base_home}/.claude/skills/gogh-brain" ;;
-    agents) echo "${base_home}/.agents/skills/gogh-brain" ;;
-    openclaw) echo "${base_home}/.openclaw/skills/gogh-brain" ;;
-    portable) echo "${base_home}/.agent-skills/gogh-brain" ;;
-    custom) echo "${custom_path%/}/gogh-brain" ;;
+    codex) echo "${base_home}/.codex/skills/gogh" ;;
+    claude) echo "${base_home}/.claude/skills/gogh" ;;
+    agents) echo "${base_home}/.agents/skills/gogh" ;;
+    openclaw) echo "${base_home}/.openclaw/skills/gogh" ;;
+    portable) echo "${base_home}/.agent-skills/gogh" ;;
+    custom) echo "${custom_path%/}/gogh" ;;
   esac
 }
 
@@ -41,7 +41,7 @@ remove_one() {
 }
 
 remove_gemini() {
-  local dir="${base_home}/.gemini/gogh-brain"
+  local dir="${base_home}/.gemini/gogh"
   local loader="${base_home}/.gemini/GEMINI.md"
   remove_one "${dir}"
   if [ -f "${loader}" ]; then
@@ -53,8 +53,8 @@ import sys
 from pathlib import Path
 
 path = Path(sys.argv[1])
-start = "<!-- gogh-brain-install:start -->"
-end = "<!-- gogh-brain-install:end -->"
+start = "<!-- gogh-install:start -->"
+end = "<!-- gogh-install:end -->"
 text = path.read_text(encoding="utf-8")
 pattern = f"\n*{re.escape(start)}.*?{re.escape(end)}\n*"
 new_text = re.sub(pattern, "\n", text, flags=re.S).strip()
