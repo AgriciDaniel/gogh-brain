@@ -124,4 +124,4 @@ Make Interfaces Feel Better is the MIFB micro-interaction execution skill for tu
 - Use the checklist note when applying MIFB as a review pass.
 - Keep MIFB positioned as execution polish rather than taste direction.
 - Keep the missing LICENSE caveat visible in source and skill summaries.
-- Route future MIFB changes through [[Brain Refresh Flow]] when that flow note is integrated.
+- Route future MIFB changes through the brain refresh workflow when that flow note is integrated.
