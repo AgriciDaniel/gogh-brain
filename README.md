@@ -6,6 +6,10 @@
 
 Source cited Obsidian operating brain that turns six frontend design skills into one advisable stack.
 
+## Watch
+
+[Watch here](https://www.youtube.com/watch?v=q3ttOcPhX5U)
+
 Gogh is an evidence-gated Obsidian brain for AI coding agents that need better
 frontend design judgment than a single prompt can provide. It combines six
 curated skills into stack advice: which skill to use when, how to combine them,
