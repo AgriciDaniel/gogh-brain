@@ -97,7 +97,7 @@ Use 45 rules as of the 2026-07-07 capture.
 - [[Em-dash audit]] is an adjacent focused audit in the current vault.
 - [[Hero discipline audit]] covers hero review outside Impeccable.
 - [[Pre-Flight Check (Section 14)]] is the Taste Skill blocking audit.
-- [[Rules and Audits Reference Card]] should eventually consolidate these checks.
+- [[Taste Skill Reference Card]] should eventually cross-reference these checks.
 - [[Impeccable Repo and Site]] records source provenance.
 
 ## Next actions

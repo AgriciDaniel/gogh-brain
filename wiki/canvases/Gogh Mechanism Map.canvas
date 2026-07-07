@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "id": "center",
+      "type": "text",
+      "text": "# Gogh Stack",
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "taste",
+      "type": "group",
+      "label": "taste prompting",
+      "x": -520,
+      "y": -280,
+      "width": 360,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "micro",
+      "type": "group",
+      "label": "micro-interaction execution",
+      "x": -520,
+      "y": 130,
+      "width": 360,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "toolchain",
+      "type": "group",
+      "label": "toolchain enforcement",
+      "x": 250,
+      "y": -280,
+      "width": 360,
+      "height": 180,
+      "color": "5"
+    },
+    {
+      "id": "retrieval-audit",
+      "type": "group",
+      "label": "retrieval and audit",
+      "x": 250,
+      "y": 80,
+      "width": 360,
+      "height": 300,
+      "color": "3"
+    },
+    {
+      "id": "taste-skill",
+      "type": "file",
+      "file": "wiki/skills/Taste Skill (Project).md",
+      "x": -480,
+      "y": -220,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "frontend-design",
+      "type": "file",
+      "file": "wiki/skills/Anthropic Frontend Design Skill.md",
+      "x": -480,
+      "y": -100,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "mifb",
+      "type": "file",
+      "file": "wiki/skills/Make Interfaces Feel Better (Skill).md",
+      "x": -480,
+      "y": 190,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "impeccable",
+      "type": "file",
+      "file": "wiki/skills/Impeccable (Toolchain).md",
+      "x": 290,
+      "y": -220,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "type": "file",
+      "file": "wiki/skills/UI UX Pro Max (Skill).md",
+      "x": 290,
+      "y": 140,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "vercel",
+      "type": "file",
+      "file": "wiki/skills/Vercel Web Design Guidelines.md",
+      "x": 290,
+      "y": 260,
+      "width": 280,
+      "height": 90
+    },
+    {
+      "id": "side",
+      "type": "text",
+      "text": "## Operating spine\n[[Unified Anti-Slop Rulebook]]\n[[Skill Stack Selection Flow]]",
+      "x": -160,
+      "y": 420,
+      "width": 420,
+      "height": 130,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-taste-skill-taste",
+      "fromNode": "taste-skill",
+      "toNode": "taste",
+      "label": "dials and pre-flight"
+    },
+    {
+      "id": "e-frontend-taste",
+      "fromNode": "frontend-design",
+      "toNode": "taste",
+      "label": "baseline direction"
+    },
+    {
+      "id": "e-mifb-micro",
+      "fromNode": "mifb",
+      "toNode": "micro",
+      "label": "craft values"
+    },
+    {
+      "id": "e-impeccable-toolchain",
+      "fromNode": "impeccable",
+      "toNode": "toolchain",
+      "label": "commands and detectors"
+    },
+    {
+      "id": "e-uiux-retrieval",
+      "fromNode": "ui-ux-pro-max",
+      "toNode": "retrieval-audit",
+      "label": "retrieval"
+    },
+    {
+      "id": "e-vercel-audit",
+      "fromNode": "vercel",
+      "toNode": "retrieval-audit",
+      "label": "audit"
+    },
+    {
+      "id": "e-taste-center",
+      "fromNode": "taste",
+      "toNode": "center"
+    },
+    {
+      "id": "e-micro-center",
+      "fromNode": "micro",
+      "toNode": "center"
+    },
+    {
+      "id": "e-toolchain-center",
+      "fromNode": "toolchain",
+      "toNode": "center"
+    },
+    {
+      "id": "e-retrieval-center",
+      "fromNode": "retrieval-audit",
+      "toNode": "center"
+    },
+    {
+      "id": "e-side-center",
+      "fromNode": "side",
+      "toNode": "center",
+      "label": "operates"
+    }
+  ]
+}

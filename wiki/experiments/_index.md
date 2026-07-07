@@ -1,6 +1,6 @@
 ---
 type: "meta"
-title: "Canvases Hub"
+title: "Experiments Hub"
 status: "evergreen"
 created: "2026-07-07"
 updated: "2026-07-07"
@@ -12,16 +12,16 @@ source_urls: []
 sources: []
 ---
 
-# Canvases Hub
+# Experiments Hub
 
-Canvases gives the vault visual maps for mechanism navigation and the legacy Taste Skill board.
+Experiments defines small probes for measuring stack order, setup cost, and unresolved claims.
 
 ## Catalog
 
 ### gogh/stack
 
-- [[wiki/canvases/Gogh Mechanism Map.canvas|Gogh Mechanism Map]] - Visualizes the six skills as four mechanisms around the Gogh stack.
-- [[wiki/canvases/Taste Skill Map.canvas|Taste Skill Map]] - Preserves the original Taste Skill board for the v2 rulebook.
+- [[Impeccable Token Cost Measurement]] - Impeccable Token Cost Measurement is the controlled run design for resolving whether current Impeccable setup still has the token overhead reported for March 2026 v1.x.
+- [[Stack Order Probe]] - Stack Order Probe is a small experiment design for testing whether Taste Skill before or after Impeccable init changes frontend output quality and audit results.
 
 ## Related
 

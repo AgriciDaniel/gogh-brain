@@ -1,6 +1,6 @@
 ---
 type: "meta"
-title: "Canvases Hub"
+title: "Decisions Hub"
 status: "evergreen"
 created: "2026-07-07"
 updated: "2026-07-07"
@@ -12,16 +12,15 @@ source_urls: []
 sources: []
 ---
 
-# Canvases Hub
+# Decisions Hub
 
-Canvases gives the vault visual maps for mechanism navigation and the legacy Taste Skill board.
+Decisions records product and vault choices that need an auditable reason, status, and rollback note.
 
 ## Catalog
 
-### gogh/stack
+### gogh/ops
 
-- [[wiki/canvases/Gogh Mechanism Map.canvas|Gogh Mechanism Map]] - Visualizes the six skills as four mechanisms around the Gogh stack.
-- [[wiki/canvases/Taste Skill Map.canvas|Taste Skill Map]] - Preserves the original Taste Skill board for the v2 rulebook.
+- [[Gogh Naming and Upstream Attribution]] - Gogh Naming and Upstream Attribution records that Gogh is the product name while all upstream project and skill names remain owned, cited, and unrebranded.
 
 ## Related
 

@@ -10,6 +10,41 @@ status: "active"
 
 Newest first.
 
+## [2026-07-07] audit | market-ready 100 structural
+
+- Structural gate reached Status: market-ready and Score: 100 after the metamorphosis integration.
+- Release-facing canonicals now point at Gogh, not the older single-skill framing.
+
+## [2026-07-07] canon | 10 works distilled + claim ledger 129 rows
+
+- Distilled the ten-work canon into source-cited notes and kept the claim ledger at 129 rows.
+- The ledger keeps contested, single-source, and confirmed claims separate.
+
+## [2026-07-07] wiki | six-skill authoring wave (counts per slice)
+
+- Six-skill wave counts by domain before S6b hubs: taste-skill 52, mifb 12, impeccable 8, frontend-design 4, ui-ux-pro-max 5, web-design-guidelines 5, stack 25, theory 6, ops 4.
+- The wave moved the vault from a Taste Skill-only map into a stack brain.
+
+## [2026-07-07] restructure | folder taxonomy migration
+
+- Migrated the vault to typed folders: skills, concepts, rules, audits, flows, comparisons, entities, reception, sources, decisions, deliverables, questions, gaps, experiments, canvases, and meta.
+- Dials now live in concepts and former playbooks now live in flows.
+
+## [2026-07-07] research | ledger 11 to 27 + 7 extracts + 6 skill captures
+
+- Expanded the source ledger from 11 to 27 sources.
+- Added seven extracts and six upstream skill captures as the evidence base for the stack.
+
+## [2026-07-07] rename | Taste Skill Brain to Gogh
+
+- Renamed the product surface from Taste Skill Brain to Gogh.
+- Kept upstream project, author, repository, install, and skill names intact.
+
+## [2026-07-07] decision | Gogh Naming and Upstream Attribution
+
+- Added [[Gogh Naming and Upstream Attribution]] as the auditable naming decision.
+- The repo folder rename to `~/Desktop/Gogh` is deferred to closeout.
+
 ## 2026-07-06 - Brain created
 
 - Scaffolded repo with Brainstein from a v2 spec; stood up a root Obsidian vault.

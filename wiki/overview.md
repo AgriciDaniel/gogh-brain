@@ -2,36 +2,33 @@
 type: "overview"
 title: "Overview"
 created: "2026-07-06"
-updated: "2026-07-06"
+updated: "2026-07-07"
 status: "active"
-confidence: "EVIDENCE-BASED"
 ---
 
 # Overview
 
-Confidence tag: EVIDENCE-BASED (from the canonical `SKILL.md`, `tasteskill.dev`, and GitHub API, retrieved 2026-07-06).
+Gogh is a source-cited Obsidian brain for choosing, stacking, auditing, and refreshing six frontend design skills for AI coding agents.
 
-## What Taste Skill is
+## What it is
 
-**Taste Skill** is an open-source [[Agent Skills Format|Agent Skill]] (a portable `SKILL.md` ruleset) that stops AI coding agents from generating generic, templated frontends - what the project calls "slop." It plugs into any tool that reads `SKILL.md` files: Claude Code, Cursor, Codex, Gemini CLI, v0, Lovable, OpenCode, and more. It is not a component library and not a hosted generator; it is a **constraint layer** that rides on top of whatever agent and stack you already use.
+Gogh is not a component library, theme pack, or one more prompt. It is an advisory stack layer that helps an operator decide which design skill to load, what order to use it in, how to resolve conflicts, and what checks must pass before frontend work is called done. V1 is read-only.
 
-- Tagline: **"Less slop, designs pop."** Positioning: "The Anti-Slop Frontend Framework for AI Agents."
-- Author: [[Leon Lin]] (`@LexnLin`, GitHub `Leonxlnx`), with `blueemi`. Built in Munich; this was his first-ever skill.
-- Repo: `github.com/Leonxlnx/taste-skill`. License **MIT**. Created 2026-02-19. **~58,400 stars** as of 2026-07-06.
-- Current version: **v2 (experimental)**, a pre-release iterating toward a v2.0.0 stable that will lock the install name and dials. v1 is preserved.
-- Scope: **landing pages, portfolios, and redesigns.** Explicitly not dashboards, data tables, or multi-step product UI. See [[Scope and Context]].
+## Four Mechanisms
 
-## How it works, in four ideas
+- Taste prompting: [[Taste Skill (Project)]] and [[Anthropic Frontend Design Skill]] set aesthetic direction and anti-default constraints.
+- Micro-interaction execution: [[Make Interfaces Feel Better (Skill)]] turns feel, motion, radii, shadows, typography, and hit areas into concrete craft checks.
+- Toolchain enforcement: [[Impeccable (Toolchain)]] adds commands, PRODUCT.md and DESIGN.md contracts, hooks, live iteration, and deterministic detectors.
+- Retrieval and audit: [[UI UX Pro Max (Skill)]] retrieves design database slices, while [[Vercel Web Design Guidelines]] audits existing UI code against runtime-fetched rules.
 
-1. **Read the room first.** Before any code, the agent infers page kind, audience, vibe, and design system from the brief and declares a one-line "Design Read." See [[Greenfield Build (Prompt 1)]].
-2. **The three dials.** It parameterizes aesthetics into [[DESIGN_VARIANCE]], [[MOTION_INTENSITY]], and [[VISUAL_DENSITY]] (each 1-10, baseline **8 / 6 / 4**), set conversationally per project. See [[The Three Dials]].
-3. **Hard rules and bans.** ~800 lines / 14 sections of machine-checkable thresholds: a total [[Em-Dash Ban]], [[Hero Discipline]], [[Navigation Discipline]], [[The Three Locks]], and a long list of [[AI Tells (Forbidden Patterns)]].
-4. **Audit-first and gated.** Redesigns start with an audit ([[Audit-First Redesign (Prompt 2)]]); everything ends with the [[Pre-Flight Check (Section 14)]]. Any failed box blocks completion.
+## Six Skills
 
-## Why it matters
+The covered skills are Taste Skill v2, make-interfaces-feel-better, Impeccable, Anthropic frontend-design, UI UX Pro Max, and Vercel web-design-guidelines. [[Design Skills Mechanism Map]] explains why they are layers, not substitutes.
 
-Taste Skill is the highest-profile third-party entry in the 2026 "skills as infrastructure" wave: the idea that design judgment can be encoded as a reusable, machine-enforced review standard an agent must pass before it claims the work is done. The underlying theory - that [[AI Slop]] is convergence to the statistical mean and that [[Taste as the Moat|taste is the durable moat]] once production commoditizes - is genuine and cited, and its central premise ("you can't install taste") is genuinely [[Reception and Criticism|contested]].
+## Stack Layer
 
-## Where to go next
+The stack layer adds selection, sequencing, conflict notes, unified anti-slop rules, release gates, and refresh discipline. Start with [[Skill Stack Selection Flow]], build through [[Full Stack Build Flow]], and gate with [[Audit Pipeline Flow]] plus [[Unified Pre-Flight Mega-Checklist]].
 
-New here? Read [[Start Here]]. Want the rules fast? [[Rules and Audits Reference Card]]. Want the why? [[Constraint Beats Coaxing]].
+## How It Stays Honest
+
+Gogh keeps dated facts in `references/source-ledger.json`, contested and single-source claims in `references/claim-ledger.md`, source notes under [[wiki/sources/_index|Sources Hub]], and refresh work in [[Brain Refresh Flow]]. Current totals are 27 ledger sources and 129 verified claim rows as of 2026-07-07.
