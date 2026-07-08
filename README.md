@@ -4,6 +4,11 @@
   <img src="assets/cover.webp" alt="Gogh: design judgment for AI coding agents" width="100%"/>
 </p>
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License: Apache 2.0"/></a>
+  <a href="https://www.skool.com/ai-marketing-hub-pro"><img src="https://img.shields.io/badge/AI%20Marketing%20Hub-Pro%20community-purple" alt="AI Marketing Hub Pro community"/></a>
+</p>
+
 Source cited Obsidian operating brain that turns six frontend design skills into one advisable stack.
 
 ## Watch
@@ -134,3 +139,9 @@ python scripts/package_release.py --version 1.0.0 --release-type market-ready
 Release packaging scans for secrets, local paths, symlinks, untracked drift,
 and unsafe ZIP entries before writing `dist/RELEASE_MANIFEST.json` and
 `dist/SHA256SUMS`. Market-ready packaging also runs `scripts/audit_brain.py`.
+
+## Community
+
+- 💬 [**AI Marketing Hub**](https://www.skool.com/ai-marketing-hub): free community for AI-powered marketing
+- ⚡ [**AI Marketing Hub Pro**](https://www.skool.com/ai-marketing-hub-pro): early access to in-development features and direct collaboration
+- 🎬 [**YouTube**](https://www.youtube.com/@AgriciDaniel): tutorials and demos
